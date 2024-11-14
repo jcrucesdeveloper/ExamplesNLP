@@ -9,3 +9,4 @@ Common NLP tasks demonstrated in this repository:
 3. Machine Translation - Converting text between languages 
 4. Text Generation - Language modeling and text completion
 5. Word Embeddings - Word2Vec, GloVe, FastText implementations
+6. Sequence Labeling - Part-of-speech tagging, chunking, named entity recognition
