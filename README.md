@@ -10,4 +10,5 @@ Common NLP tasks demonstrated in this repository:
 4. Text Generation - Language modeling and text completion
 5. Word Embeddings - Word2Vec, GloVe, FastText implementations
 6. Sequence Labeling - Part-of-speech tagging, chunking, named entity recognition
-7. N-grams and Linear Interpolation - Text processing techniques (First task of course NLP course 2024 )
+7. N-grams and Linear Interpolation - Text processing techniques (First task of course NLP course 2024 FCFM)
+8. Naive Bayes and Linear Neural Network - Text classification using Naive Bayes and Linear Neural Network (Second task of course NLP course 2024 FCFM)
