@@ -123,4 +123,3 @@ if __name__ == "__main__":
     initial_text = torch.tensor([1, 2, 3]).to(device)  # tokens iniciales
     generated_text = model.generate(initial_text, max_length=100, temperature=0.7)
     
-    # Main training functions would follow... 

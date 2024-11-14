@@ -1,9 +1,10 @@
-# -*- coding: utf-8 -*-
 """
-Tarea 3: Sequence Labelling
-Procesamiento de Lenguaje Natural (CC6205-1 - Otoño 2024)
+Sequence Labelling Example
+Natural Language Processing
 
-Este script implementa un modelo de reconocimiento de entidades nombradas (NER) utilizando redes neuronales recurrentes (RNN) con PyTorch.
+This script implements sequence labeling tasks using neural networks with PyTorch.
+Demonstrates Named Entity Recognition (NER) and Part-of-Speech (POS) tagging.
+The model uses BiLSTM architecture with CRF layer for sequence prediction.
 """
 
 import torch

@@ -92,6 +92,11 @@ if __name__ == "__main__":
     optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
     criterion = nn.CrossEntropyLoss()
     
+    # Crear dataset y dataloader
+    text = ["your", "text", "data", "here"]  
+    dataset = Word2VecDataset(text)
+    train_loader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True)
+    
     # Entrenamiento
     train(model, train_loader, optimizer, criterion, N_EPOCHS)
     
@@ -101,4 +106,3 @@ if __name__ == "__main__":
     # Obtener embeddings
     embeddings = model.embeddings.weight.data.cpu().numpy()
     
-    # Main training functions would follow... 

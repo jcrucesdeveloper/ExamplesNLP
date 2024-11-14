@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Text Classification Example
 Natural Language Processing
@@ -122,4 +121,3 @@ if __name__ == "__main__":
         print(f'\tTrain Loss: {train_loss:.3f} | Train Acc: {train_acc*100:.2f}%')
         print(f'\tValid Loss: {valid_loss:.3f} | Valid Acc: {valid_acc*100:.2f}%')
     
-    # Main training functions would follow... 
