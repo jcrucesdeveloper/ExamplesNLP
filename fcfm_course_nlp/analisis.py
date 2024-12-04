@@ -9,7 +9,7 @@ class TensorOperationAnalyzer(ast.NodeVisitor):
         self.operations = defaultdict(int)
         
     def visit_Call(self, node):
-        # Check for tensor/array operations
+
         if isinstance(node.func, ast.Attribute):
             op_name = node.func.attr
             # PyTorch operations
