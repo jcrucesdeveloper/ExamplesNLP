@@ -81,9 +81,23 @@ PYTORCH_OPERATIONS = [
     UTILITIES_OPERATIONS,
 ]
 
+def main():
+    operation_categories = {
+        "Creation Operations": CREATION_OPERATIONS,
+        "Indexing, Slicing, Joining, Mutating Operations": INDEXING_SLICING_JOINING_MUTATING_OPERATIONS,
+        "Accelerator Operations": ACCELERATOR_OPERATIONS,
+        "Random Sampling Operations": RANDOM_SAMPLING_OPERATIONS,
+        "Serialization Operations": SERIALIZATION_OPERATIONS,
+        "Parallelism Operations": PARALLELISM_OPERATIONS,
+        "Locally Disabling Gradient Computation Operations": LOCALLY_DISABLING_GRADIENT_COMPUTATION_OPERATIONS,
+        "Math Operations": MATH_OPERATIONS,
+        "Utilities Operations": UTILITIES_OPERATIONS
+    }
 
+    for category, operations in operation_categories.items():
+        print(f"\n{category}:")
+        for op in operations:
+            print(f"  - {op.name}: {op.params} -> {op.return_type}")
 
-
-
-
-
+if __name__ == "__main__":
+    main()
