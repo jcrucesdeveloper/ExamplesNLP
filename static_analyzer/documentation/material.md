@@ -1,2 +1,4 @@
-- Course NLP FCFM 2024
-- 
+- https://github.com/dccuchile/CC6205 - Course Deep Learning FCFM 2024 (Code available with permission)
+- https://web.stanford.edu/class/cs224n/ - Course NLP Stanford 2024 (Code available, check permisission of use)
+- https://people.ischool.berkeley.edu/~dbamman/nlp18.html - Course NLP Berkeley 2018 (No code available, send email to profesor)
+- https://www.natalieparde.com/teaching/cs521_spring2020.html - Course NLP University of Illinois 2020 (No code available, send email to profesor)
