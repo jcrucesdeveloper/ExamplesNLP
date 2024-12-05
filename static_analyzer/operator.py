@@ -6,10 +6,14 @@ class Operator:
         self.description = description
 
     def __str__(self):
-        inputs_str = "x ".join(self.input)
-        return f"{self.name} | {inputs_str} → {self.output}"
+        inputs_str = ", ".join(self.input)
+        return f"{self.name} | [{inputs_str}] → {self.output}"
 
 
 if __name__ == "__main__":
-    op = Operator("add", ["input: Tensor"] , "output: Tensor") 
+    op = Operator(
+        name="tensor",
+        input=["data", "dtype=None", "device=None", "requires_grad=False", "pin_memory=False"],
+        output="Tensor"
+    )
     print(op)
