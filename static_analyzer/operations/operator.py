@@ -11,9 +11,5 @@ class Operator:
 
 
 if __name__ == "__main__":
-    op = Operator(
-        name="tensor",
-        input=["data", "dtype=None", "device=None", "requires_grad=False", "pin_memory=False"],
-        output="Tensor"
-    )
+    op = Operator("dstack", ["Sequence of Tensors"], "Tensor"),  
     print(op)
