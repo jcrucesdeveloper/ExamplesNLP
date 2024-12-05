@@ -1,5 +1,17 @@
 from operator import Operator
 
+class Operator:
+    def __init__(self, name, parameters, return_type):
+        self.name = name
+        self.parameters = parameters
+        self.return_type = return_type
+    
+    def __str__(self):
+        # Format the parameters as a comma-separated string
+        params_str = ", ".join(str(p) for p in self.parameters)
+        # Pad the name to a fixed width (e.g., 15 characters)
+        return f"{self.name:<15} | [{params_str}] → {self.return_type}"
+
 # Documentation: https://pytorch.org/docs/stable/torch.html#creation-ops
 CREATION_OPERATIONS = [
     # tensor | https://pytorch.org/docs/stable/generated/torch.tensor.html#torch.tensor
@@ -82,22 +94,20 @@ PYTORCH_OPERATIONS = [
 ]
 
 def main():
-    operation_categories = {
-        "Creation Operations": CREATION_OPERATIONS,
-        "Indexing, Slicing, Joining, Mutating Operations": INDEXING_SLICING_JOINING_MUTATING_OPERATIONS,
-        "Accelerator Operations": ACCELERATOR_OPERATIONS,
-        "Random Sampling Operations": RANDOM_SAMPLING_OPERATIONS,
-        "Serialization Operations": SERIALIZATION_OPERATIONS,
-        "Parallelism Operations": PARALLELISM_OPERATIONS,
-        "Locally Disabling Gradient Computation Operations": LOCALLY_DISABLING_GRADIENT_COMPUTATION_OPERATIONS,
-        "Math Operations": MATH_OPERATIONS,
-        "Utilities Operations": UTILITIES_OPERATIONS
-    }
+    # operation_categories = {
+    #     "Creation Operations": CREATION_OPERATIONS,
+    #     "Indexing, Slicing, Joining, Mutating Operations": INDEXING_SLICING_JOINING_MUTATING_OPERATIONS,
+    #     "Accelerator Operations": ACCELERATOR_OPERATIONS,
+    #     "Random Sampling Operations": RANDOM_SAMPLING_OPERATIONS,
+    #     "Serialization Operations": SERIALIZATION_OPERATIONS,
+    #     "Parallelism Operations": PARALLELISM_OPERATIONS,
+    #     "Locally Disabling Gradient Computation Operations": LOCALLY_DISABLING_GRADIENT_COMPUTATION_OPERATIONS,
+    #     "Math Operations": MATH_OPERATIONS,
+    #     "Utilities Operations": UTILITIES_OPERATIONS
+    # }
 
-    for category, operations in operation_categories.items():
-        print(f"\n{category}:")
-        for op in operations:
-            print(f"  - {op.name}: {op.params} -> {op.return_type}")
+    for operator in INDEXING_SLICING_JOINING_MUTATING_OPERATIONS:
+        print(operator)
 
 if __name__ == "__main__":
     main()
