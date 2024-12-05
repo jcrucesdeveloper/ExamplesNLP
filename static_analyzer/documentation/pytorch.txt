@@ -1,2 +1,0 @@
-https://pytorch.org/docs/stable/torch.html - General methods and operations
-https://pytorch.org/docs/stable/nn.html - Convolutional Neural Networks
