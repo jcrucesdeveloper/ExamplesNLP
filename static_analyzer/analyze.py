@@ -1,6 +1,5 @@
 import ast
 from collections import defaultdict
-from pytorch.torch import PYTORCH_OPERATIONS
 
 class StaticAnalyzerTensorOperation(ast.NodeVisitor):
     def __init__(self):
