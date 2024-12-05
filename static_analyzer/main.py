@@ -1,5 +1,6 @@
 import nbformat
 import os
+from analyzer import StaticAnalyzerTensorOperation
 
 def read_notebook(name_file):
     notebook = nbformat.read(name_file, as_version=4)
@@ -13,5 +14,10 @@ def read_python_code(name_file):
 
 
 if __name__ == "__main__":
-    read_python_code("example_code.py")
-    read_notebook("example_notebook.ipynb")
+    code_python = read_python_code("example_code.py")
+    code_notebook = read_notebook("example_notebook.ipynb")
+
+    # Pass to analyzer
+    analyzer = StaticAnalyzerTensorOperation()
+    # Analyze and generate report
+    #WIP
